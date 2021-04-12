@@ -1,0 +1,138 @@
+.work-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  font-family: $secondary-font;
+  font-weight: 300;
+
+  margin: 0 3rem;
+  padding-top: 10rem;
+
+  // // ANIMATION
+  animation: fadeIn 1s forwards;
+
+  h1 {
+    font-family: $primary-font;
+    font-weight: 700;
+  }
+}
+
+.project-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  margin: 2rem 2rem;
+  transition: 0.2s ease-out;
+
+  flex-grow: 1;
+  width: 40%;
+
+  &:hover .item-img {
+    cursor: pointer;
+    filter: grayscale(100%) drop-shadow(7px 7px 0px #a1c4fd);
+    transform: scale(1.02);
+  }
+
+  &:hover .view-project {
+    cursor: pointer;
+    border-bottom: 1px solid;
+  }
+}
+
+.project-link:hover .view-project {
+  border-bottom: 0px;
+
+  &:hover .view-project {
+    color: red;
+    border-bottom: 1px;
+  }
+}
+
+// STYLING CONTENT OF PROJECT ITEM
+
+.item-details {
+  h2 {
+    cursor: pointer;
+    font-family: $primary-font;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-weight: 400;
+    margin: 0.5rem 0;
+  }
+}
+
+.item-img {
+  justify-content: center;
+  margin: 1rem 0;
+  transition: 0.2s ease-out;
+  width: 100%;
+}
+
+.item-stack {
+  margin: 1rem 0;
+
+  span {
+    margin-right: 1.5rem;
+  }
+}
+
+.project-link {
+  display: flex;
+  align-items: flex-start;
+  a,
+  span {
+    fill: white;
+    margin-right: 1.5rem;
+    padding-bottom: 0.3rem;
+
+    &:hover {
+      fill: url(#icon-gradient) #a1c4fd;
+      background-image: linear-gradient(0deg, #a1c4fd 0%, #c2e9fb 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .view-project {
+    text-transform: uppercase;
+  }
+
+  .under-construction {
+    opacity: 0.3;
+    &:hover {
+      cursor: default;
+      fill: white;
+    }
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .item-details {
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .item-stack {
+    margin: 1rem 0;
+
+    span {
+      margin-right: 0.8rem;
+      font-size: 0.8rem;
+    }
+  }
+
+  .view-project {
+    font-size: 0.9rem;
+  }
+}

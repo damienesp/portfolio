@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import HikePool from "./pages/HikePool";
+import Home from "./pages/Home";
+import Mauvie from "./pages/Mauvie";
+import Navigation from "./components/Navigation";
+import Photographer from "./pages/Photographer";
+import ScrollToTop from "./components/ScrollToTop";
+import WeatherApp from "./pages/WeatherApp";
+import Work from "./pages/Work";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <ScrollToTop />
+      <Switch>
+        <Route exact path="/">
+          <Navigation />
+          <Home />
+          <About />
+          <Work />
+          <Contact />
+        </Route>
+        <Route path="/hikepool">
+          <HikePool />
+        </Route>
+        <Route path="/photographer">
+          <Photographer />
+        </Route>
+        <Route path="/mauvie">
+          <Mauvie />
+        </Route>
+        <Route path="/weather-app">
+          <WeatherApp />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

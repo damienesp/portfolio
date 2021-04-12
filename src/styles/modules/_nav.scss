@@ -1,0 +1,186 @@
+nav {
+  background-color: $primary-color;
+
+  height: 12vh;
+  width: 100%;
+  left: 0;
+
+  position: fixed;
+  z-index: 99;
+
+  transition: 0.2s ease-out;
+
+  // ANIMATION
+  animation: fadeIn-top 1s forwards;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 12vh;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.nav-links {
+  display: flex;
+  margin-right: 3rem;
+  cursor: pointer;
+
+  li {
+    cursor: pointer;
+
+    font-family: $primary-font;
+    font-size: 1.1rem;
+    font-weight: 400;
+
+    margin-left: 3rem;
+    text-transform: lowercase;
+
+    transition: 0.2s ease-out;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+.logo {
+  cursor: pointer;
+
+  font-family: $logo-font;
+  font-size: 2rem;
+
+  margin-left: 3rem;
+
+  transition: 0.2s ease-out;
+
+  &:hover {
+    color: $secondary-color;
+  }
+
+  span {
+    // ANIMATION
+    animation: fadeIn-left 1s forwards 0.5s;
+    display: inline-block;
+    opacity: 0;
+  }
+}
+
+// HAMBURGER
+.hamburger {
+  background: none;
+  border: none;
+  display: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  .hamburger-line {
+    background-color: white;
+    border-radius: 50px;
+    margin-bottom: 7px;
+    height: 3px;
+    width: 30px;
+  }
+}
+
+// STYLING NAV WHEN SCROLLING
+.nav-scrolling {
+  // background-color: rgba(27, 35, 56, 0.5);
+  background-color: rgba(#232938, 0.5);
+  transition: 0.2s ease-out;
+}
+
+// STYLING NAV LINKS WHEN ACTIVE
+.nav-active {
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid white;
+}
+
+// MOBILE MENU STYLING
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    cursor: pointer;
+    display: block;
+    margin: 0 3rem;
+    position: relative;
+    z-index: 999;
+
+    &:hover > div {
+      background-color: $secondary-color;
+    }
+  }
+
+  .logo {
+    position: relative;
+    z-index: 999;
+  }
+
+  .nav-links {
+    background-color: $secondary-color;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateY(-100%);
+
+    li {
+      color: white;
+      opacity: 0;
+      font-size: 1.5rem;
+    }
+  }
+
+  .nav-links.active {
+    animation: slideIn 0.6s cubic-bezier(0.83, 0, 0.17, 1) both;
+
+    li {
+      animation: fadeIn 0.3s forwards;
+      animation-delay: 0.5s;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .logo:hover.active {
+    color: $primary-color;
+  }
+
+  .nav-links.hidden {
+    animation: slideOut 0.6s cubic-bezier(0.83, 0, 0.17, 1) both;
+  }
+
+  .hamburger.active {
+    &:hover > div {
+      background-color: $primary-color;
+    }
+
+    .hamburger-line {
+      background-color: white;
+      transform-origin: 1px;
+      transition: transform 0.3s ease-in;
+    }
+
+    & div:nth-child(1) {
+      transform: rotate(45deg);
+    }
+    & div:nth-child(2) {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    & div:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 20vh;
+}
+
+.footer-logo {
+  cursor: pointer;
+  font-family: $logo-font;
+  font-size: 1.7rem;
+
+  &:hover {
+    background-image: linear-gradient(0deg, #a1c4fd 0%, #c2e9fb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.footer-social {
+  font-family: $secondary-font;
+  font-weight: 400;
+}
+
+.footer-github {
+  margin: 0 2rem;
+  transition: 0.2s ease-out;
+
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+.footer-linkedin {
+  transition: 0.2s ease-out;
+
+  &:hover {
+    color: $secondary-color;
+  }
+}
