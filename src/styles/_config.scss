@@ -31,6 +31,16 @@ a {
   text-decoration: none;
 }
 
+.under-construction {
+  opacity: 0.3;
+  fill: white;
+  margin-right: 1.5rem;
+  &:hover {
+    cursor: default;
+    fill: white;
+  }
+}
+
 // KEYFRAMES
 @keyframes fadeIn-top {
   0% {

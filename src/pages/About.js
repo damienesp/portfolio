@@ -47,6 +47,8 @@ const About = () => {
             height="80"
             frameBorder="0"
             allowtransparency="true"
+            allow="encrypted-media"
+            loading="lazy"
           ></iframe>
         </div>
         <div className="skills">

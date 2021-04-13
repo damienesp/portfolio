@@ -104,6 +104,7 @@ const Navigation = () => {
           <button
             className={`hamburger ${mobileMenu ? "active" : ""}`}
             onClick={handleOnClick}
+            aria-label="menu mobile"
           >
             <div className="hamburger-line"></div>
             <div className="hamburger-line"></div>
