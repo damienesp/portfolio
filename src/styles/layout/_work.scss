@@ -132,7 +132,17 @@
     }
   }
 
-  .view-project {
-    font-size: 0.9rem;
+  .project-link {
+    a {
+      margin-right: 1rem;
+    }
+
+    span {
+      margin: 0;
+    }
+
+    .view-project {
+      font-size: 0.8rem;
+    }
   }
 }

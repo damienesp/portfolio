@@ -1,8 +1,8 @@
 import { useHistory } from "react-router-dom";
 
 import introductionImg from "../img/project-vue/photographer_home.png";
-import firstBlock from "../img/project-vue/photographer_bottom.png";
-import secondBlock from "../img/project-vue/mauvie_top.png";
+// import firstBlock from "../img/project-vue/photographer_bottom.png";
+// import secondBlock from "../img/project-vue/mauvie_top.png";
 
 const Photographer = () => {
   const history = useHistory();
@@ -19,7 +19,11 @@ const Photographer = () => {
         <h1>Photographer</h1>
         <div className="introduction-details">
           <h5>Freelance project</h5>
-          <a href="https://github.com/damienesp/movie-library">
+          <a
+            href="https://github.com/damienesp/photographer-portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
@@ -27,6 +31,10 @@ const Photographer = () => {
               width="21.6"
               className="project-github"
             >
+              <linearGradient id="icon-gradient" x1="0" y1="1">
+                <stop offset="0%" stopColor="#a1c4fd" />
+                <stop offset="100%" stopColor="#c2e9fb" />
+              </linearGradient>
               <path
                 d="M32.6,16.3c0,7.2-4.7,13.3-11.1,15.5c-0.8,0.2-1.1-0.3-1.1-0.8c0-0.5,0-2.3,0-4.5c0-1.5-0.5-2.5-1.1-3
 	c3.6-0.4,7.4-1.8,7.4-8c0-1.8-0.6-3.2-1.7-4.4c0.2-0.4,0.7-2.1-0.2-4.3c0,0-1.4-0.4-4.5,1.7c-1.3-0.4-2.7-0.5-4.1-0.5
@@ -34,17 +42,6 @@ const Photographer = () => {
 	c-0.5,0.4-0.9,1.1-1,2.2c-0.9,0.4-3.3,1.1-4.7-1.4c0,0-0.9-1.6-2.5-1.7c0,0-1.6,0-0.1,1c0,0,1.1,0.5,1.8,2.4c0,0,1,3.2,5.5,2.2
 	c0,1.4,0,2.4,0,2.8c0,0.4-0.3,0.9-1.1,0.8C4.7,29.6,0,23.5,0,16.3C0,7.3,7.3,0,16.3,0C25.3,0,32.6,7.3,32.6,16.3z"
               />
-            </svg>
-          </a>
-          <a href="https://github.com/damienesp">
-            <svg
-              version="1.1"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-              width="20"
-              className="project-live"
-            >
-              <path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z" />
             </svg>
           </a>
         </div>
@@ -92,24 +89,24 @@ const Photographer = () => {
         </div>
 
         <div className="first-img-block">
-          <img
+          {/* <img
             className="first-img"
             src={firstBlock}
             alt="Mauvie movie page"
-          ></img>
+          ></img> */}
         </div>
       </div>
 
       <div className="second-block">
         <div className="second-img-block">
-          <img
+          {/* <img
             className="second-img"
             src={secondBlock}
             alt="Mauvie list page"
-          ></img>
+          ></img> */}
         </div>
 
-        <div className="second-paragraph">
+        <div className="second-paragraph img-missing">
           <h2>Future improvements</h2>
           <p>
             Future features are planned such as the addition of an analytics
@@ -122,12 +119,12 @@ const Photographer = () => {
       <div className="third-block">
         <h2>Lessons Learned</h2>
         <p>
-          I learned how to collaboratively build a project and the importance of
-          having open communication together with following the feedbacks and
-          adapting quickly my work in consequence. The project helped me to get
-          more confident with CSS and React. The next steps of the project could
-          lead me to learn new services to integrate into the code and explore
-          more complex Javascript and CSS animations.
+          I learn how to collaboratively build a project and the importance of
+          having open communication. Following the feedbacks and adapting
+          quickly my work in consequence is also a big part. The project help me
+          to get more confident with SCSS and React. The next steps of the
+          project could lead me to learn new services to integrate into the code
+          and explore more complex Javascript and CSS animations.
         </p>
       </div>
     </div>

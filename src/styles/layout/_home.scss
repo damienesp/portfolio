@@ -3,7 +3,7 @@
   background-image: url("../../img/backhome.svg");
   background-position: top 12vh right -350px;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 1200px;
 
   min-height: 100vh;
   width: 100%;
@@ -86,7 +86,7 @@
 @media screen and (max-width: 668px) {
   .home-wrapper {
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.4rem;
     }
   }
 }
@@ -103,7 +103,7 @@
   }
 }
 
-@media screen and (max-width: 468px) {
+@media screen and (max-width: 500px) {
   .home-wrapper {
     h1 {
       font-size: 1.9rem;
@@ -111,5 +111,44 @@
   }
   .home-social {
     padding: 0 3rem;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .home-wrapper {
+    h1 {
+      font-size: 1.8rem;
+      padding: 15rem 2rem 0 2rem;
+    }
+  }
+  .home-social {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 438px) {
+  .home-wrapper {
+    h1 {
+      font-size: 1.6rem;
+      padding: 15rem 2rem 0 2rem;
+    }
+  }
+  .home-github {
+    transform: scale(0.9);
+  }
+  .home-linkedin {
+    transform: scale(0.9);
+  }
+}
+
+@media screen and (max-width: 396px) {
+  .home-wrapper {
+    h1 {
+      font-size: 1.5rem;
+      padding: 15rem 1rem 0 1rem;
+    }
+    .home-social {
+      padding: 0 1rem;
+    }
   }
 }

@@ -11,7 +11,11 @@ const Home = () => {
         <span>for Design and Science.</span>
       </h1>
       <div className="home-social">
-        <a href="https://github.com/damienesp">
+        <a
+          href="https://github.com/damienesp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <svg
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +36,11 @@ const Home = () => {
             />
           </svg>
         </a>
-        <a href="https://www.linkedin.com/in/damien-espana/">
+        <a
+          href="https://www.linkedin.com/in/damien-espana/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <svg
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"

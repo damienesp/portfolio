@@ -38,3 +38,11 @@
   // ANIMATION
   animation: fadeIn 1s forwards;
 }
+
+@media screen and (max-width: 378px) {
+  .contact-info {
+    span {
+      font-size: 1.3rem;
+    }
+  }
+}

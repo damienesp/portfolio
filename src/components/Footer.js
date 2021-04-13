@@ -9,11 +9,18 @@ const Footer = () => {
         </Link>
       </h1>
       <div className="footer-social">
-        <a href="https://github.com/damienesp" className="footer-github">
+        <a
+          href="https://github.com/damienesp"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="footer-github"
+        >
           Github
         </a>
         <a
           href="https://www.linkedin.com/in/damien-espana/"
+          target="_blank"
+          rel="noopener noreferrer"
           className="footer-linkedin"
         >
           Linkedin

@@ -64,7 +64,6 @@ const About = () => {
             </ul>
             <ul className="column">
               <li>React</li>
-              <li>Redux</li>
               <li>Node.js</li>
             </ul>
           </div>

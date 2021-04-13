@@ -39,10 +39,7 @@ const Work = () => {
               <span>MongoDB</span>
             </div>
             <div className="project-link">
-              <a
-                href="https://github.com/damienesp/photographer-portfolio"
-                className="under-construction"
-              >
+              <a className="under-construction">
                 <svg
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -59,10 +56,7 @@ const Work = () => {
                   />
                 </svg>
               </a>
-              <a
-                href="https://github.com/damienesp"
-                className="under-construction"
-              >
+              <a className="under-construction">
                 <svg
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +94,11 @@ const Work = () => {
               <span>SCSS</span>
             </div>
             <div className="project-link">
-              <a href="https://github.com/damienesp/photographer-portfolio">
+              <a
+                href="https://github.com/damienesp/photographer-portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +115,7 @@ const Work = () => {
                   />
                 </svg>
               </a>
-              <a href="https://github.com/damienesp">
+              <a className="under-construction">
                 <svg
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -154,7 +152,11 @@ const Work = () => {
               <span>CSS</span>
             </div>
             <div className="project-link">
-              <a href="https://github.com/damienesp/movie-library">
+              <a
+                href="https://github.com/damienesp/movie-library"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -171,7 +173,11 @@ const Work = () => {
                   />
                 </svg>
               </a>
-              <a href="https://github.com/damienesp">
+              <a
+                href="https://github.com/damienesp"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -209,7 +215,11 @@ const Work = () => {
               <span>CSS</span>
             </div>
             <div className="project-link">
-              <a href="https://github.com/damienesp/weather-app">
+              <a
+                href="https://github.com/damienesp/weather-app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
@@ -226,7 +236,11 @@ const Work = () => {
                   />
                 </svg>
               </a>
-              <a href="https://github.com/damienesp">
+              <a
+                href="https://github.com/damienesp"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
