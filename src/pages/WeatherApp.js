@@ -45,7 +45,7 @@ const WeatherApp = () => {
             </svg>
           </a>
           <a
-            href="https://github.com/damienesp"
+            href="https://damiesp-weather.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
