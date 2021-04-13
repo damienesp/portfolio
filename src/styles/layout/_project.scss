@@ -159,4 +159,27 @@
       width: 100%;
     }
   }
+
+  .project-wrapper > * {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+    .first-paragraph,
+    .second-paragraph,
+    .third-block > p,
+    h2 {
+      width: 100%;
+      margin: 0;
+      align-items: center;
+    }
+
+    .first-img-block,
+    .second-img-block {
+      display: none;
+    }
+  }
 }
