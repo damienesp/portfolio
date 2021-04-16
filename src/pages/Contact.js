@@ -8,7 +8,7 @@ const Contact = () => {
         <p>
           Feel free to reach out for more informations or just to have a talk.
         </p>
-        <span>espana.damien@gmail.com</span>
+        <span>contact@damiesp.com</span>
       </div>
       <Footer />
     </div>
