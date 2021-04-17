@@ -40,6 +40,7 @@
   .column {
     display: flex;
     flex-direction: column;
+    margin-bottom: 1rem;
 
     &:nth-child(1) {
       margin-right: 1rem;
@@ -60,7 +61,7 @@
 
 iframe {
   border-radius: 10px;
-  width: 50%;
+  width: 100%;
 }
 
 @media screen and (max-width: 1080px) {
@@ -99,10 +100,6 @@ iframe {
   }
 }
 
-iframe {
-  width: 60%;
-}
-
 @media screen and (max-width: 768px) {
   .about {
     flex-direction: column;
@@ -132,26 +129,6 @@ iframe {
     li {
       margin-right: 2rem;
       font-size: 1rem;
-    }
-  }
-
-  iframe {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 368px) {
-  iframe {
-    width: 80px;
-  }
-}
-
-.skills-test {
-  svg {
-    fill: white;
-    &:hover {
-      cursor: pointer;
-      fill: url(#icon-gradient) #a1c4fd;
     }
   }
 }

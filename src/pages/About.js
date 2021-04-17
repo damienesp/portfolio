@@ -66,17 +66,13 @@ const About = () => {
             </ul>
             <ul className="column">
               <li>React</li>
-              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>MongoDB</li>
             </ul>
           </div>
 
-          <h1>Knowledge of</h1>
+          <h1>Conception</h1>
           <div className="tools-list">
-            <ul className="column">
-              <li>Python</li>
-              <li>Bio-Chemo-Informatics</li>
-              <li>Machine Learning</li>
-            </ul>
             <ul className="column">
               <li>Adobe Photoshop</li>
               <li>Adobe Illustrator</li>
