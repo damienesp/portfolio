@@ -1,6 +1,11 @@
 const Home = () => {
   return (
     <div className="home-wrapper" id="home-link">
+      <div className="circle-wrapper">
+        <div className="circle-1"></div>
+        <div className="circle-2"></div>
+        <div className="circle-3"></div>
+      </div>
       <h1>
         <span>Hello, my name is Damien. I'm a</span>
         <br />
