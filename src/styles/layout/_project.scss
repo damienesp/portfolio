@@ -57,6 +57,10 @@
         fill: url(#icon-gradient) #a1c4fd;
       }
     }
+
+    .under-construction {
+      margin-right: 0.5rem;
+    }
   }
 
   p {
@@ -145,6 +149,23 @@
 }
 
 @media (max-width: 768px) {
+  .project-introduction {
+    p {
+      width: 100%;
+    }
+    .introduction-details {
+      a {
+        margin: 0;
+      }
+      .project-github {
+        margin-right: 0.5rem;
+      }
+    }
+    .under-construction {
+      margin: 0;
+    }
+  }
+
   .first-block {
     flex-direction: column;
   }
@@ -154,7 +175,11 @@
 
     .second-paragraph {
       margin-top: 2rem;
+      h2:nth-child(3) {
+        margin-top: 5rem;
+      }
     }
+
     img {
       width: 100%;
     }
