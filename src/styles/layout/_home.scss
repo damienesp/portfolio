@@ -4,42 +4,6 @@
   width: 100%;
   position: relative;
 
-  .circle-wrapper {
-    position: absolute;
-    width: 100%;
-
-    .circle-1 {
-      width: 300px;
-      height: 300px;
-      border-radius: 500px;
-      background-color: #4b7297;
-      position: absolute;
-      filter: blur(100px);
-      right: 100px;
-      top: 350px;
-    }
-    .circle-2 {
-      width: 200px;
-      height: 200px;
-      border-radius: 500px;
-      background-color: rgb(160, 48, 154);
-      position: absolute;
-      filter: blur(100px);
-      right: 0;
-      top: 350px;
-    }
-    .circle-3 {
-      width: 200px;
-      height: 200px;
-      border-radius: 500px;
-      background-color: #594f7e;
-      position: absolute;
-      filter: blur(100px);
-      right: 300px;
-      top: 450px;
-    }
-  }
-
   h1 {
     cursor: default;
     font-family: $primary-font;
@@ -71,6 +35,48 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+  }
+}
+
+// BACKGROUND STYLING
+.circle-wrapper {
+  animation: bgFade 3s ease-out forwards;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+
+  .circle-1 {
+    width: 400px;
+    height: 500px;
+    border-radius: 500px;
+    background-color: #4b7297;
+    position: absolute;
+    filter: blur(100px);
+    right: 40%;
+    top: 350px;
+  }
+  .circle-2 {
+    width: 200px;
+    height: 300px;
+    border-radius: 500px;
+    background-color: rgb(160, 48, 154);
+    position: absolute;
+    filter: blur(100px);
+    right: 30%;
+    top: 350px;
+    opacity: 0.8;
+  }
+  .circle-3 {
+    width: 200px;
+    height: 400px;
+    border-radius: 500px;
+    background-color: #594f7e;
+    position: absolute;
+    filter: blur(100px);
+    right: 50%;
+    top: 450px;
   }
 }
 
@@ -110,6 +116,44 @@
   }
   .home-social {
     padding: 0 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .circle-wrapper {
+    position: absolute;
+    width: 100%;
+
+    .circle-1 {
+      width: 300px;
+      height: 300px;
+      border-radius: 500px;
+      background-color: #4b7297;
+      position: absolute;
+      filter: blur(100px);
+      right: 100px;
+      top: 350px;
+    }
+    .circle-2 {
+      width: 200px;
+      height: 200px;
+      border-radius: 500px;
+      background-color: rgb(160, 48, 154);
+      position: absolute;
+      filter: blur(100px);
+      right: 0;
+      top: 350px;
+    }
+    .circle-3 {
+      width: 200px;
+      height: 200px;
+      border-radius: 500px;
+      background-color: #594f7e;
+      position: absolute;
+      filter: blur(100px);
+      right: 300px;
+      top: 450px;
+    }
   }
 }
 
