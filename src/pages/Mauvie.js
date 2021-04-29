@@ -22,7 +22,7 @@ const Mauvie = () => {
         <div className="introduction-details">
           <h5>Personal project</h5>
           <a
-            href="https://github.com/damienesp/movie-library"
+            href="https://github.com/damienesp/mauvie"
             target="_blank"
             rel="noopener noreferrer"
           >

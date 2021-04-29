@@ -150,7 +150,7 @@ const Work = () => {
             </div>
             <div className="project-link">
               <a
-                href="https://github.com/damienesp/movie-library"
+                href="https://github.com/damienesp/mauvie"
                 target="_blank"
                 rel="noopener noreferrer"
               >
